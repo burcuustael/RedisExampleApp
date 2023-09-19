@@ -19,7 +19,7 @@ namespace RedisExampleApp.API.Repositories
             return product;
         }
 
-        public async Task<List<Product>> GetAsync()
+        public async Task<List<Product>> GetAllAsync()
         {
             return await _context.Products.ToListAsync();
         }

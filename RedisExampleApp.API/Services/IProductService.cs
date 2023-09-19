@@ -1,8 +1,8 @@
 ﻿using RedisExampleApp.API.Models;
 
-namespace RedisExampleApp.API.Repositories
+namespace RedisExampleApp.API.Services
 {
-    public interface IProductRepository
+    public interface IProductService // normalde dto döneriz
     {
         Task<List<Product>> GetAllAsync();
         Task<Product> GetByIdAsync(int id);
